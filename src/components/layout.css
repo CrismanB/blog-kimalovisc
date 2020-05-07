@@ -28,6 +28,18 @@ progress,
 video {
   display: inline-block;
 }
+
+main {
+  background-color: #043748;
+  margin: auto;
+  margin-top: 35px;
+  width: 85%;
+  height: max-content;
+  min-height: 100vh;
+  margin-bottom: 20px;
+  padding: 2% 3%;
+  border-radius: 6px;
+}
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -42,6 +54,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: #d9d44c;
 }
 a:active,
 a:hover {
@@ -57,6 +70,7 @@ strong {
   font-weight: inherit;
   font-weight: bolder;
 }
+
 dfn {
   font-style: italic;
 }
@@ -199,8 +213,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: #f1f1f1;
+  font-family: "Roboto", serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -385,6 +399,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  line-height: 150%;
 }
 figure {
   margin-left: 0;
@@ -540,8 +555,9 @@ li > p {
   margin-bottom: calc(1.45rem / 2);
 }
 code {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   line-height: 1.45rem;
+  color: #d130ae;
 }
 kbd {
   font-size: 0.85rem;
@@ -597,6 +613,7 @@ code {
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
+  height: 400px;
 }
 pre code {
   background: none;
