@@ -23,7 +23,9 @@ module.exports = {
 
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`,
+    {
+      ssr: false,
+    }`gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // {
     //   resolve: `gatsby-plugin-manifest`,
