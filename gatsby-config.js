@@ -22,10 +22,15 @@ module.exports = {
     },
 
     `gatsby-transformer-remark`,
-    `gatsby-plugin-styled-components`,
+
     {
-      ssr: false,
-    }`gatsby-transformer-sharp`,
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        ssr: false,
+      },
+    },
+
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // {
     //   resolve: `gatsby-plugin-manifest`,
