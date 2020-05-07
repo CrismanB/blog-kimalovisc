@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import GlobalStyle from "./../styles/global"
 import Header from "./../components/Header"
 import Footer from "./../components/Footer"
 import Blog from "./../components/Blog"
@@ -22,6 +23,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <>
+      <GlobalStyle />
       <SEO title="Home" />
       <Header />
       <Container>

@@ -4,11 +4,9 @@ import React from "react"
 import SEO from "../components/seo"
 import Header from "./../components/Header"
 import { Container } from "./../styles/aboutme"
-import GlobalStyle from "./../styles/global"
 
 const AboutMe = () => (
   <>
-    <GlobalStyle />
     <SEO title="Sobre mim" />
     <Header />
     <Container>
