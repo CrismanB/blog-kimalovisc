@@ -12,8 +12,12 @@ const AboutMe = () => (
     <SEO title="Sobre mim" />
     <Header />
     <Container>
-      <h1>Sobre mim</h1>
-      <p>Welcome to page 2</p>
+      <h1>
+        Em construção...{" "}
+        <span role="img" aria-label="hammer">
+          🔨
+        </span>
+      </h1>
     </Container>
   </>
 )

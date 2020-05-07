@@ -55,9 +55,15 @@ export default function Header() {
           </NavList>
         </Nav>
         <SocialMedia>
-          <FontAwesomeIcon icon={faGithub} size={"3x"} />
-          <FontAwesomeIcon icon={faInstagram} size={"3x"} />
-          <FontAwesomeIcon icon={faLinkedin} size={"3x"} />
+          <a href="https://github.com/CrismanB">
+            <FontAwesomeIcon icon={faGithub} size={"3x"} />
+          </a>
+          <a href="https://www.instagram.com/kimalovisc/?hl=pt-br">
+            <FontAwesomeIcon icon={faInstagram} size={"3x"} />
+          </a>
+          <a href="https://www.linkedin.com/in/crisman-santos-94b67aa0/">
+            <FontAwesomeIcon icon={faLinkedin} size={"3x"} />
+          </a>
         </SocialMedia>
       </Container>
     </>
