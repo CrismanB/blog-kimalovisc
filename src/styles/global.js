@@ -26,7 +26,7 @@ export default createGlobalStyle`
         
     }
 
-    body , input , button{
+    body , input , button, span{
         font: 14px 'Roboto', sans-serif;
 
     }

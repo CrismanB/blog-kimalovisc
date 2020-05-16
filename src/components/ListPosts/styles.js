@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   height: auto;
+  margin: auto;
+
   width: 100%;
 
   margin-top: 10px;
@@ -25,32 +27,28 @@ export const List = styled.ul`
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (max-width: 740px) {
+  @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 425px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `
 
 export const ListItem = styled.li`
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: 250px;
+
   margin-top: 12px;
   cursor: pointer;
   padding: 2px;
   transition: border, opacity 0.4s;
 
-  background: #457fca; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #5691c8,
-    #457fca
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #5691c8,
-    #457fca
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ad1552;
 
-  border: 1px solid #4c6970;
+  border: 1px solid #ad1552;
   border-radius: 5px;
 
   div {
@@ -58,6 +56,9 @@ export const ListItem = styled.li`
     padding-top: 20px;
     text-align: center;
     h3 {
+      color: #dfdfdf;
+      font-weight: 500;
+      font-family: "Quicksand", sans-serif;
     }
   }
 
@@ -67,13 +68,19 @@ export const ListItem = styled.li`
     align-items: center;
     height: 20%;
     background-color: #143c49;
+    border-radius: 4px;
     opacity: 0.9;
     color: #fff;
     font-weight: bold;
+
+    span {
+      font-weight: 700;
+      font-family: "Quicksand", sans-serif;
+    }
   }
 
   :hover {
-    opacity: 0.6;
-    border: 2px solid #00478a;
+    opacity: 0.8;
+    border: 1px solid #800435;
   }
 `

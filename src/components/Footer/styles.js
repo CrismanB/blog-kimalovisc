@@ -19,7 +19,7 @@ export const Content = styled.div`
 
   span {
     color: #d9d44c;
-    font-family: "Roboto", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: bold;
   }
 `

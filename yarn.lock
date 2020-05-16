@@ -12344,6 +12344,11 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-quicksand@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/typeface-quicksand/-/typeface-quicksand-1.1.4.tgz#69ba3efca02575699c36681e718651052bdec0a6"
+  integrity sha512-J/dTQI5g6V8kK1M38FNn+eHVzImtQtOvVaWA/QU3BNHdx+0NSMh3DL6Ub4CFEo2k5/QAw9vppWMbLVg4vGyXGw==
+
 ua-parser-js@^0.7.18:
   version "0.7.21"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"

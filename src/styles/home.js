@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import "typeface-quicksand"
 
 export const Container = styled.div`
   height: auto;
@@ -15,7 +16,8 @@ export const Title = styled.h1`
   text-shadow: -10px 10px 10px #272726;
   margin: 0;
   margin-left: 2%;
-  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
 `
 
 export const ContentContainer = styled.div`
@@ -29,7 +31,8 @@ export const ContentContainer = styled.div`
   }
 `
 export const TechContainer = styled.section`
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 450px;
   display: flex;
   flex-direction: column;
@@ -45,15 +48,27 @@ export const TechContainer = styled.section`
     height: 300px;
     width: 500px;
 
+    margin: 10px 35px;
     margin-top: 25px;
     opacity: 0.8;
     border-radius: 4px;
+
+    @media (max-width: 600px) {
+      height: 100%;
+      width: 100%;
+    }
+
+    @media (max-width: 375px) {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   span {
     padding: 0 20px;
     color: #ebebeb;
-    font-family: "Roboto", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
     margin-bottom: 20px;
     text-indent: 1.5em;
 
@@ -87,7 +102,8 @@ export const ProfileContainer = styled.section`
     font-size: 22px;
     margin-top: 20px;
     color: #ebebeb;
-    font-family: "Roboto", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
     white-space: nowrap;
     text-shadow: -10px 7px 10px #272726;
   }
@@ -107,7 +123,8 @@ export const ProfileContainer = styled.section`
     font-size: 14px;
     margin: 0 10px;
     margin-bottom: 50px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
     vertical-align: middle;
     line-height: 20px;
 

@@ -47,7 +47,10 @@ export const Logo = styled.div`
   padding-right: 25px;
 
   b {
-    color: #fff;
+    color: #fdfdfd;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
   }
 `
 
@@ -72,7 +75,7 @@ export const NavList = styled.ul`
       color: #fff;
       font-weight: bold;
       font-size: 14px;
-      font-family: "Montserrat", sans-serif;
+      font-family: "Quicksand", sans-serif;
       transition: 0.4s;
 
       cursor: pointer;
@@ -96,10 +99,11 @@ export const NavList = styled.ul`
     left: 0;
     height: auto;
     width: 95%;
+
     margin-left: 2.5%;
 
-    background: rgba(0, 0, 0, 0.8);
-    opacity: 0.7;
+    background: #56477a;
+    opacity: 0.98;
     border-radius: 5px;
 
     display: ${props => (props.toggle ? "block" : "none")};
@@ -112,14 +116,13 @@ export const NavList = styled.ul`
         padding: 5px 0;
         width: 100%;
         font-size: 32px;
-        border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+        border-bottom: solid 1px rgba(255, 255, 255, 0.5);
 
         :hover {
           background: rgba(0, 0, 0, 0.2);
           font-size: 36px;
           color: #de5bae;
           -webkit-text-stroke-width: 1px; /* largura da borda */
-          -webkit-text-stroke-color: #000;
         }
       }
     }
@@ -151,6 +154,10 @@ export const SocialMedia = styled.div`
       color: #de5bae;
       font-size: 60px;
     }
+  }
+
+  @media (max-width: 320px) {
+    display: none;
   }
 `
 
