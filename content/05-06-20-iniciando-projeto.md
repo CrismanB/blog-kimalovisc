@@ -22,7 +22,7 @@ date: 2020-06-05T03:00:00.000Z
 
 `yarn android`
 
-> Com seu projeto rodando e aberto no editor, crie uma pasta **src** na raiz do projeto com um arquivo **App.tsx**. Faremos um "Hello World" para configurar a estrutura inicial do projeto com um componente funcional.
+> Com seu projeto rodando e aberto no editor, crie uma pasta **src** na raiz do projeto com um arquivo **App.tsx**. No arquivo index altere o import do App para renferenciar a pasta **src**. Faremos um "Hello World" para configurar a estrutura inicial do projeto com um componente funcional.
 
 ```tsx
 import React from "react"
