@@ -31,7 +31,7 @@ import {
 
 import nodeImg from "./../assets/node.png"
 import reactImg from "./../assets/react.png"
-import profileImg from "./../assets/me.jpg"
+import profileImg from "./../assets/profile.jpg"
 import deskImg from "./../assets/note.jpg"
 
 const IndexPage = ({ data }) => {
