@@ -103,7 +103,7 @@ export const PresentationContainer = styled.section`
         font-size: 34px;
       }
 
-      @media (max-width: 400px) {
+      @media (max-width: 415px) {
         font-size: 30px;
       }
     }
@@ -123,7 +123,7 @@ export const PresentationContainer = styled.section`
         color: #f5f5f5;
         font-family: "Quicksand", sans-serif;
 
-        @media (max-width: 400px) {
+        @media (max-width: 415px) {
           font-size: 16px;
         }
       }
@@ -202,7 +202,7 @@ export const TechsContainer = styled.div`
 
   header {
     width: 600px;
-
+    height: max-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,7 +227,7 @@ export const TechsContainer = styled.div`
           width: 110px;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 415px) {
           height: 50px;
           width: 80px;
         }
@@ -251,7 +251,7 @@ export const TechsContainer = styled.div`
           font-size: 18px;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 415px) {
           font-size: 12px;
         }
       }
@@ -297,7 +297,7 @@ export const TechsContainer = styled.div`
           border: 2px solid #5be635;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 415px) {
           margin: 4px;
           padding: 5px 10px;
         }
@@ -352,7 +352,9 @@ export const SummaryBlogContainer = styled.section`
       position: relative;
 
       a {
-        width: max-content;
+        width: 180px;
+        height: 40px;
+        text-align: center;
         padding: 10px 25px;
         border-radius: 30px;
         background-color: #abba58;
@@ -360,7 +362,7 @@ export const SummaryBlogContainer = styled.section`
         font-weight: bold;
         position: absolute;
         bottom: -50px;
-        right: 15px;
+        right: 25px;
 
         :hover {
           background-color: #de5bae;
