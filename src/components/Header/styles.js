@@ -20,7 +20,7 @@ export const Container = styled.div`
   margin: auto;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
-  background: #56477a;
+  background: #897d3a;
   padding: 0 45px;
   box-shadow: 0 5px 15px #272726;
 
@@ -48,7 +48,7 @@ export const Logo = styled.div`
 
   b {
     color: #fdfdfd;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
     font-family: "Quicksand", sans-serif;
   }
@@ -71,10 +71,10 @@ export const NavList = styled.ul`
     margin: auto;
 
     a {
-      padding: 0 8px;
+      padding: 0 12px;
       color: #fff;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 18px;
       font-family: "Quicksand", sans-serif;
       transition: 0.4s;
 
@@ -152,11 +152,10 @@ export const SocialMedia = styled.div`
     padding: 0 8px;
     :hover {
       color: #de5bae;
-      font-size: 60px;
     }
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 400px) {
     display: none;
   }
 `

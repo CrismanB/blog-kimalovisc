@@ -1,19 +1,12 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons"
 
 import {
   Container,
   Logo,
   Nav,
-  SocialMedia,
   Separater,
   ToggleButton,
   NavList,
@@ -44,27 +37,27 @@ export default function Header() {
           />
           <NavList toggle={toggle}>
             <li>
-              <Link to={"/"}>Inicio</Link>
+              <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <Link to={"/posts"}>Posts</Link>
+              <Link to={"/posts"}>Blog</Link>
             </li>
             <li>
               <Link to={"/about"}>Contato</Link>
             </li>
           </NavList>
         </Nav>
-        <SocialMedia>
+        {/* <SocialMedia>
           <a href="https://github.com/CrismanB">
-            <FontAwesomeIcon icon={faGithub} size={"3x"} />
+            <FontAwesomeIcon icon={faGithub} size={"4x"} />
           </a>
           <a href="https://www.instagram.com/kimalovisc/?hl=pt-br">
-            <FontAwesomeIcon icon={faInstagram} size={"3x"} />
+            <FontAwesomeIcon icon={faInstagram} size={"4x"} />
           </a>
           <a href="https://www.linkedin.com/in/crisman-santos-94b67aa0/">
-            <FontAwesomeIcon icon={faLinkedin} size={"3x"} />
+            <FontAwesomeIcon icon={faLinkedin} size={"4x"} />
           </a>
-        </SocialMedia>
+        </SocialMedia> */}
       </Container>
     </>
   )
