@@ -202,7 +202,7 @@ export const TechsContainer = styled.div`
 
   header {
     width: 600px;
-    height: max-content;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,7 +286,7 @@ export const TechsContainer = styled.div`
         padding: 10px 20px;
         border: 2px solid #a38d10;
         border-radius: 30px;
-        margin: 0 8px;
+        margin: 3px 8px;
 
         transition: 0.4s;
         span {
