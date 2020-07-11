@@ -36,7 +36,8 @@ import deskImg from "./../assets/note.jpg"
 
 const IndexPage = ({ data }) => {
   // const date = new Date()
-  // const myAge = date.getFullYear() - 1994
+  // const my
+  //Age = date.getFullYear() - 1994
 
   return (
     <>
