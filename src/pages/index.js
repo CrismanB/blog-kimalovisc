@@ -35,9 +35,8 @@ import profileImg from "./../assets/profile.jpg"
 import deskImg from "./../assets/note.jpg"
 
 const IndexPage = ({ data }) => {
-  // const date = new Date()
-  // const my
-  //Age = date.getFullYear() - 1994
+  const date = new Date()
+  const myAge = date.getFullYear() - 1994
 
   return (
     <>
@@ -73,11 +72,12 @@ const IndexPage = ({ data }) => {
                 <a href="https://github.com/CrismanB">
                   <FontAwesomeIcon icon={faGithub} size={"3x"} />
                 </a>
-                <a href="https://www.instagram.com/kimalovisc/?hl=pt-br">
-                  <FontAwesomeIcon icon={faInstagram} size={"3x"} />
-                </a>
+
                 <a href="https://www.linkedin.com/in/crisman-santos-94b67aa0/">
                   <FontAwesomeIcon icon={faLinkedin} size={"3x"} />
+                </a>
+                <a href="https://www.instagram.com/kimalovisc/?hl=pt-br">
+                  <FontAwesomeIcon icon={faInstagram} size={"3x"} />
                 </a>
               </footer>
             </div>
@@ -90,13 +90,19 @@ const IndexPage = ({ data }) => {
               <h1>Sobre mim</h1>
             </div>
             <article>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              tempus mollis metus, eu varius arcu tincidunt vel. Integer risus
-              eros, rutrum non risus ac, mattis rutrum justo. Vivamus finibus
-              massa vel sollicitudin lacinia. Aliquam aliquam venenatis eros a
-              congue. Suspendisse enim eros, maximus at consequat at, maximus
-              sit amet tortor. Ut nec cursus leo. Proin turpis magna, finibus ut
-              massa ac, dapibus lobortis tellus.
+              Tenho {myAge} anos, formado em análise e desenvolvimento de
+              sistemas na <a href={"http://www.umc.br/home"}>UMC</a>{" "}
+              (Universidade de Mogi das Cruzes, São Paulo). Apaixonado por
+              desenvolvimento desde quando fiz minhas primeiras linhas de código
+              no Excel VBA no meu primeiro emprego. Sou desenvolvedor Fullstack
+              JavaScript usando <b>Node JS</b>, <b>React JS</b> e{" "}
+              <b>React-Native</b> como principais ferramentas. Estudante do
+              bootcamp da <a href={"https://rocketseat.com.br/"}>Rocketseat</a>{" "}
+              com certificado da 9º turma do GoStack.{" "}
+              <i>
+                Abaixo algumas das tecnologias e bibliotecas utilizadas em meus
+                projetos.
+              </i>
             </article>
           </AboutMeContainer>
           <TechsContainer>
@@ -158,16 +164,25 @@ const IndexPage = ({ data }) => {
             <section>
               <h1>Sobre o Blog</h1>
               <div>
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                  tempus mollis metus, eu varius arcu tincidunt vel. Integer
-                  risus eros, rutrum non risus ac, mattis rutrum justo. Vivamus
-                  finibus massa vel sollicitudin lacinia. Aliquam aliquam
-                  venenatis eros a congue. Suspendisse enim eros, maximus at
-                  consequat at, maximus sit amet tortor. Ut nec cursus leo.
-                  Proin turpis magna, finibus ut massa ac, dapibus lobortis
-                  tellus.
-                </span>
+                <p>
+                  Esse blog foi feito com{" "}
+                  <a href={"https://www.gatsbyjs.org/"}>Gatsby</a> que é um
+                  framework gratuito baseado no React para criação de sites e
+                  aplicativos rápidos. A parte de estilização utilizei a
+                  biblioteca{" "}
+                  <a href={"https://styled-components.com"}>
+                    Styled Components
+                  </a>{" "}
+                  que é incrivel para estilizar os componentes da aplicação.
+                </p>
+                <p>
+                  As postagens do blog serão sobre dicas e exemplos de
+                  programação da linguagens que estudo.{" "}
+                  <span aria-label="tech" role="img">
+                    💻
+                  </span>
+                </p>
+
                 <Link to={"/posts"}>Ver postagens</Link>
               </div>
             </section>

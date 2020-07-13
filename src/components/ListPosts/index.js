@@ -1,13 +1,45 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useCallback } from "react"
+import { formatDistance } from "date-fns"
+import pt from "date-fns/locale/pt-BR"
 
 import SEO from "./../seo"
 
-import { Container, List, ListItem } from "./styles"
+import { Container, List, ListItem, Content } from "./styles"
+
+import reactImg from "./../../assets/react.png"
+import nodeImg from "./../../assets/node.png"
+import defaultImg from "./../../assets/developer_img.png"
 
 const ListPosts = ({ data: { allMarkdownRemark } }) => {
-  //const date = new Date()
   const { edges } = allMarkdownRemark
+
+  const InfoDate = useCallback(({ children }) => {
+    const parseDate = Date.parse(children)
+    const dateformatted = formatDistance(parseDate, new Date(), {
+      locale: pt,
+      addSuffix: true,
+    })
+
+    return <span>{dateformatted}</span>
+  }, [])
+
+  function ImageTech({ children }) {
+    let imgTech
+
+    switch (children) {
+      case "react":
+        imgTech = reactImg
+        break
+      case "node":
+        imgTech = nodeImg
+        break
+
+      default:
+        imgTech = defaultImg
+    }
+
+    return <img src={imgTech} alt="Tech" />
+  }
 
   return (
     <>
@@ -17,14 +49,12 @@ const ListPosts = ({ data: { allMarkdownRemark } }) => {
           {edges.map(({ node }) => {
             return (
               <ListItem key={node.id}>
-                <Link style={{ color: "#000" }} to={node.frontmatter.path}>
-                  <div>
-                    <h3>{node.frontmatter.title}</h3>
-                  </div>
-                  <footer>
-                    <span>Atualizado {node.frontmatter.date}</span>
-                  </footer>
-                </Link>
+                <Content to={node.frontmatter.path}>
+                  <h1>{node.frontmatter.tech}</h1>
+                  <h2>{node.frontmatter.description}</h2>
+                  <InfoDate>{node.frontmatter.date}</InfoDate>
+                  <ImageTech>{node.frontmatter.image}</ImageTech>
+                </Content>
               </ListItem>
             )
           })}

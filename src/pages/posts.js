@@ -8,16 +8,20 @@ import ListPosts from "./../components/ListPosts"
 
 import SEO from "../components/seo"
 
+import { Aside, Container } from "./../styles/home"
+
 const Posts = ({ data }) => {
   return (
     <>
       <SEO title="Home" />
       <Header />
-      <div style={{ height: "max-content", minHeight: "100vh" }}>
+
+      <Container>
+        <Aside />
         <Blog>
           <ListPosts data={data} />
         </Blog>
-      </div>
+      </Container>
       <Footer />
     </>
   )
@@ -30,9 +34,11 @@ export const pageQuery = graphql`
         node {
           html
           frontmatter {
-            title
-            date(formatString: "DD/MM")
+            tech
+            date
             path
+            image
+            description
           }
         }
       }

@@ -1,7 +1,9 @@
 ---
-title: "Context API - React 💻"
+tech: "React Js"
+description: "Exemplo da API de Contexto do React."
 path: "/post/context-api-react"
-date: 2020-06-06T03:00:00.000Z
+date: 2020-07-13T03:00:00.000Z
+image: "react"
 ---
 
 ### Context - React Hooks

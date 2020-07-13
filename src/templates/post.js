@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 
 const IndexPage = ({ data: { markdownRemark } }) => {
   const { html, frontmatter } = markdownRemark
-  const { title, date } = frontmatter
+  const { description, date } = frontmatter
 
   const parseDate = Date.parse(date)
   const dateformatted = formatDistance(parseDate, new Date(), {
@@ -21,8 +21,23 @@ const IndexPage = ({ data: { markdownRemark } }) => {
     <>
       <Layout>
         <SEO title="Post" />
-        <h1>{title}</h1>
-        <p>Atualizado: {dateformatted}</p>
+        <h1
+          style={{
+            color: "#bcb84b",
+          }}
+        >
+          {description}
+        </h1>
+        <p
+          style={{
+            backgroundColor: "rgba(230, 214, 21, 0.05)",
+            width: "max-content",
+            padding: "10px",
+            borderRadius: "5px",
+          }}
+        >
+          Atualizado: {dateformatted}
+        </p>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </Layout>
     </>
@@ -36,7 +51,7 @@ export const pageQuery = graphql`
       frontmatter {
         date
         path
-        title
+        description
       }
     }
   }

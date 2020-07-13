@@ -185,9 +185,13 @@ export const AboutMeContainer = styled.section`
   article {
     font-size: 18px;
     font-family: "Quicksand", sans-serif;
-
+    text-indent: 1.5em;
     @media (max-width: 620px) {
       padding: 8px;
+    }
+
+    a {
+      font-weight: bold;
     }
   }
 `
@@ -338,7 +342,7 @@ export const SummaryBlogContainer = styled.section`
     display: flex;
     flex-direction: column;
     margin-left: 30px;
-
+    margin-top: -50px;
     h1 {
       width: max-content;
       padding: 10px 10px;
@@ -351,7 +355,7 @@ export const SummaryBlogContainer = styled.section`
       flex-direction: column;
       position: relative;
 
-      a {
+      > a {
         width: 180px;
         height: 40px;
         text-align: center;
@@ -369,9 +373,13 @@ export const SummaryBlogContainer = styled.section`
         }
       }
 
-      span {
+      p {
         font-family: "Quicksand", sans-serif;
         font-weight: 600;
+        text-indent: 1.5em;
+      }
+
+      p + p {
       }
     }
 

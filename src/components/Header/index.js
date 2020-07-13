@@ -7,14 +7,14 @@ import {
   Container,
   Logo,
   Nav,
-  Separater,
+  Separator,
   ToggleButton,
   NavList,
 } from "./styles"
 import GlobalStyle from "./../../styles/global"
 
 export default function Header() {
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false | undefined)
 
   function handleToggleButton() {
     setToggle(!toggle)
@@ -28,7 +28,7 @@ export default function Header() {
           <Logo>
             <b>KIMALOVISC</b>
           </Logo>
-          <Separater>|</Separater>
+          <Separator>|</Separator>
           <ToggleButton
             icon={faBars}
             size={"2x"}

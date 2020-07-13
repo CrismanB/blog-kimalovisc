@@ -1,7 +1,9 @@
 ---
-title: "01 - Iniciando nosso projeto! 💻"
+tech: "React"
+description: "Bem vindo ao primeiro post!"
 path: "/post/iniciando-projeto"
 date: 2020-06-05T03:00:00.000Z
+image: "react"
 ---
 
 ### O que iremos fazer neste projeto???

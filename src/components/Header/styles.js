@@ -160,7 +160,7 @@ export const SocialMedia = styled.div`
   }
 `
 
-export const Separater = styled.span`
+export const Separator = styled.span`
   color: #fff;
   font-size: 26px;
   align-self: center;
