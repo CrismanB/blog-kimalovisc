@@ -13,7 +13,7 @@ import { Aside, Container } from "./../styles/home"
 const Posts = ({ data }) => {
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Blog" />
       <Header />
 
       <Container>

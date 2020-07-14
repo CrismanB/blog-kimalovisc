@@ -22,7 +22,7 @@ import profileImg from "./../assets/profile.jpg"
 
 const AboutMe = () => (
   <>
-    <SEO title="Sobre mim" />
+    <SEO title="Contato" />
     <Header />
     <Container>
       <Aside />
