@@ -5,20 +5,22 @@ import {
   faEnvelope,
   faPhone,
   faMapPin,
+  faBuilding,
 } from "@fortawesome/free-solid-svg-icons"
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons"
+// import {
+//   faGithub,
+//   faInstagram,
+//   faLinkedin,
+// } from "@fortawesome/free-brands-svg-icons"
 
 import { Container, Aside, PresentationContainer } from "./../styles/aboutme"
 
 import SEO from "../components/seo"
 import Header from "./../components/Header"
 import Footer from "./../components/Footer"
+import logo from "./../images/kimalovisc.png"
 
-import profileImg from "./../assets/profile.jpg"
+//import profileImg from "./../assets/profile.jpg"
 
 const AboutMe = () => (
   <>
@@ -28,14 +30,19 @@ const AboutMe = () => (
       <Aside />
 
       <PresentationContainer>
-        <img src={profileImg} alt="Crisman Santos" />
+        <img src={logo} alt="Crisman Santos" />
         <div>
-          <span>Desenvolvedor Fullstack</span>
-          <h1>CRISMAN SANTOS</h1>
+          <h3>KIMALOVISC 63ID TECNOLOGIA LTDA</h3>
+          <span>Desenvolvimento web</span>
+
+          <div>
+            <FontAwesomeIcon icon={faBuilding} size={"2x"} />
+            <span>CNPJ - 43.371.063/0001-67</span>
+          </div>
 
           <div>
             <FontAwesomeIcon icon={faEnvelope} size={"2x"} />
-            <span>crisman.bernardo25@hotmail.com</span>
+            <span>kimalovisc63id@hotmail.com</span>
           </div>
 
           <div>
@@ -48,7 +55,7 @@ const AboutMe = () => (
             <span>Itaquaquecetuba, São Paulo - Brasil</span>
           </div>
 
-          <footer>
+          {/* <footer>
             <a href="https://github.com/CrismanB">
               <FontAwesomeIcon icon={faGithub} size={"3x"} />
             </a>
@@ -59,7 +66,7 @@ const AboutMe = () => (
             <a href="https://www.instagram.com/kimalovisc/?hl=pt-br">
               <FontAwesomeIcon icon={faInstagram} size={"3x"} />
             </a>
-          </footer>
+          </footer> */}
         </div>
       </PresentationContainer>
     </Container>

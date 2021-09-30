@@ -63,11 +63,13 @@ export const PresentationContainer = styled.section`
   margin-bottom: 80px;
 
   img {
-    height: 400px;
+    height: 250px;
     width: 300px;
-    border-radius: 205px;
-    border: 5px solid #02202b;
+    border-radius: 20px;
+    border: 2px solid #02202b;
     box-shadow: 0px 0px 50px #1a1a19;
+    filter: contrast(150%) brightness(75%);
+    margin: auto 0;
 
     @media (max-width: 950px) {
       height: 260px;
@@ -89,14 +91,15 @@ export const PresentationContainer = styled.section`
       color: #bcb84b;
       font-size: 20px;
       font-family: "Quicksand", sans-serif;
+      //: 90px;
     }
 
-    h1 {
+    h3 {
       font-family: "Questrial", sans-serif;
       font-weight: 500;
       color: #d9d9d9;
       margin-top: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 12px;
       letter-spacing: 3px;
 
       @media (max-width: 790px) {
@@ -119,7 +122,7 @@ export const PresentationContainer = styled.section`
         cursor: initial;
       }
 
-      & span {
+      > span {
         color: #f5f5f5;
         font-family: "Quicksand", sans-serif;
 
@@ -168,14 +171,14 @@ export const AboutMeContainer = styled.section`
   margin-bottom: 50px;
 
   div {
-    width: 300px;
+    width: max-content;
     height: max-content;
     background-color: rgba(230, 214, 21, 0.05);
     border-radius: 5px;
-
+    padding: 0 5px;
     h1 {
       color: #fff;
-      padding: 5px 0 5px 20px;
+      //padding: 5px 0 5px 20px;
     }
     @media (max-width: 620px) {
       margin-left: 2%;

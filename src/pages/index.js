@@ -6,12 +6,13 @@ import {
   faEnvelope,
   faPhone,
   faMapPin,
+  faBuilding,
 } from "@fortawesome/free-solid-svg-icons"
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons"
+// import {
+//   faGithub,
+//   faInstagram,
+//   faLinkedin,
+// } from "@fortawesome/free-brands-svg-icons"
 
 import GlobalStyle from "./../styles/global"
 import Header from "./../components/Header"
@@ -26,17 +27,18 @@ import {
   Separator,
   AboutMeContainer,
   TechsContainer,
-  SummaryBlogContainer,
+  // SummaryBlogContainer,
 } from "./../styles/home"
 
 import nodeImg from "./../assets/node.png"
 import reactImg from "./../assets/react.png"
-import profileImg from "./../assets/profile.jpg"
-import deskImg from "./../assets/note.jpg"
+//import profileImg from "./../assets/profile.jpg"
+import logo from "./../images/kimalovisc.png"
+//import deskImg from "./../assets/note.jpg"
 
 const IndexPage = ({ data }) => {
   const date = new Date()
-  const myAge = date.getFullYear() - 1994
+  //const myAge = date.getFullYear() - 1994
 
   return (
     <>
@@ -48,14 +50,19 @@ const IndexPage = ({ data }) => {
         <Aside />
         <HomeContainer>
           <PresentationContainer>
-            <img src={profileImg} alt="Crisman Santos" />
+            <img src={logo} alt="Crisman Santos" />
             <div>
-              <span>Desenvolvedor Fullstack</span>
-              <h1>CRISMAN SANTOS</h1>
+              <h3>KIMALOVISC 63ID TECNOLOGIA LTDA</h3>
+              <span>Desenvolvimento web</span>
+
+              <div>
+                <FontAwesomeIcon icon={faBuilding} size={"2x"} />
+                <span>CNPJ - 43.371.063/0001-67</span>
+              </div>
 
               <div>
                 <FontAwesomeIcon icon={faEnvelope} size={"2x"} />
-                <span>crisman.bernardo25@hotmail.com</span>
+                <span>kimalovisc63id@hotmail.com</span>
               </div>
 
               <div>
@@ -68,7 +75,7 @@ const IndexPage = ({ data }) => {
                 <span>Itaquaquecetuba, São Paulo - Brasil</span>
               </div>
 
-              <footer>
+              {/* <footer>
                 <a href="https://github.com/CrismanB">
                   <FontAwesomeIcon icon={faGithub} size={"3x"} />
                 </a>
@@ -79,7 +86,7 @@ const IndexPage = ({ data }) => {
                 <a href="https://www.instagram.com/kimalovisc/?hl=pt-br">
                   <FontAwesomeIcon icon={faInstagram} size={"3x"} />
                 </a>
-              </footer>
+              </footer> */}
             </div>
           </PresentationContainer>
 
@@ -87,10 +94,16 @@ const IndexPage = ({ data }) => {
 
           <AboutMeContainer>
             <div>
-              <h1>Sobre mim</h1>
+              <h1>Sobre a empresa</h1>
             </div>
             <article>
-              Tenho {myAge} anos, formado em análise e desenvolvimento de
+              Fundada em Setembro de 2021 porém com mais de 1 ano de experiência
+              no mercado, a {<b>Kimalovisc 63ID Tecnologia LTDA</b>} é uma
+              empresa que tem um compromisso de promover bons resultados e
+              experiências através da tecnologia para todos os nossos clientes.
+              Somos guiados pela inovação e pela entrega de soluções que
+              realmente atendem o que nossos clientes desejam.{" "}
+              {/* formado em análise e desenvolvimento de
               sistemas na <a href={"http://www.umc.br/home"}>UMC</a>{" "}
               (Universidade de Mogi das Cruzes, São Paulo). Apaixonado por
               desenvolvimento desde quando fiz minhas primeiras linhas de código
@@ -98,10 +111,10 @@ const IndexPage = ({ data }) => {
               JavaScript usando <b>Node JS</b>, <b>React JS</b> e{" "}
               <b>React-Native</b> como principais ferramentas. Estudante do
               bootcamp da <a href={"https://rocketseat.com.br/"}>Rocketseat</a>{" "}
-              com certificado da 9º turma do GoStack.{" "}
+              com certificado da 9º turma do GoStack.{" "} */}
               <i>
-                Abaixo algumas das tecnologias e bibliotecas utilizadas em meus
-                projetos.
+                Abaixo algumas das tecnologias e bibliotecas utilizadas em
+                nossos projetos.
               </i>
             </article>
           </AboutMeContainer>
@@ -152,13 +165,16 @@ const IndexPage = ({ data }) => {
                 <li>
                   <span>React-Navigation</span>
                 </li>
+                <li>
+                  <span>Redux</span>
+                </li>
               </ul>
             </section>
           </TechsContainer>
 
-          <Separator />
+          {/* <Separator /> */}
 
-          <SummaryBlogContainer>
+          {/* <SummaryBlogContainer>
             <div />
             <img src={deskImg} alt="Desktop" />
             <section>
@@ -186,7 +202,7 @@ const IndexPage = ({ data }) => {
                 <Link to={"/posts"}>Ver postagens</Link>
               </div>
             </section>
-          </SummaryBlogContainer>
+          </SummaryBlogContainer> */}
         </HomeContainer>
       </Container>
       <Footer />

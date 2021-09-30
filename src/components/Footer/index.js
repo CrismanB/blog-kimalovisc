@@ -14,7 +14,7 @@ export default function Footer() {
             color={"#c93c3c"}
             style={{ cursor: "none" }}
           />{" "}
-          por mim.
+          pela KIMALOVISC
         </span>
       </Content>
     </Container>

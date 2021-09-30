@@ -35,11 +35,13 @@ export const PresentationContainer = styled.section`
   margin: auto;
 
   img {
-    height: 400px;
+    height: 250px;
     width: 300px;
-    border-radius: 205px;
-    border: 5px solid #02202b;
+    border-radius: 20px;
+    border: 2px solid #02202b;
     box-shadow: 0px 0px 50px #1a1a19;
+    filter: contrast(150%) brightness(75%);
+    margin: auto 0;
 
     @media (max-width: 950px) {
       height: 260px;
@@ -63,12 +65,12 @@ export const PresentationContainer = styled.section`
       font-family: "Quicksand", sans-serif;
     }
 
-    h1 {
+    h3 {
       font-family: "Questrial", sans-serif;
       font-weight: 500;
       color: #d9d9d9;
       margin-top: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 12px;
       letter-spacing: 3px;
 
       @media (max-width: 790px) {

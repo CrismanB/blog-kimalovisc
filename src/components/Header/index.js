@@ -39,9 +39,9 @@ export default function Header() {
             <li>
               <Link to={"/"}>Home</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to={"/posts"}>Blog</Link>
-            </li>
+            </li> */}
             <li>
               <Link to={"/contact"}>Contato</Link>
             </li>
